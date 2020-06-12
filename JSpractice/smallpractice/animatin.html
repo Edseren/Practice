@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+    <style type="text/css">
+        #circle {
+            width: 100px;
+            height: 100px;
+            background: #6bff5b;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div id="circle"></div>
+
+
+
+<script type="text/javascript">
+
+    $("#circle").click(function () {
+        $(this).animate( {
+            width:      "400px",
+            height:     "400px",
+            marginLeft: "100px",
+            marginTop:  "100px",
+        }, 2000)
+    });
+
+
+</script>
+
+</body>
+</html>

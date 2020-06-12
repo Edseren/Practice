@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>secondjs</title>
+</head>
+<body>
+<input id="inputText" type="text">
+<button id="changeButtton">Change the text</button>
+<p id="textC">This text needs changing</p>
+
+
+<script type="text/javascript">
+
+    document.getElementById("changeButtton").onclick = function () {
+        var textEntered = "";
+
+        textEntered = document.getElementById("inputText").value;
+        document.getElementById("textC").innerHTML = textEntered;
+    }
+
+</script>
+
+
+
+
+</body>
+</html>

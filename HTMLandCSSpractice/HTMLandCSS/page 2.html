@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="resorces/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is page 2</h1>
+    <a href="index.html">Go back to page 1</a>
+    <a href="page%203.html">Go to page 3</a>
+<table border="1">
+    <thead>
+<tr>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Evolves to</th>
+</tr>
+    </thead>
+    <tbody>
+        <!--bulbasaur-->
+    <tr>
+        <td><img width="50" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png" alt=""></td>
+        <td>Bulbasaur</td>
+        <td>Grass/Poison</td>
+        <td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
+    </tr>
+    <!--charmander-->
+    <tr>
+        <td><img width="50" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png" alt=""></td>
+        <td>Charmander</td>
+        <td>Fire</td>
+        <td><a href="http://pokemon.wikia.com/wiki/Charmeleon ">Charmeleon</a></td>
+
+    </tr>
+    <!--squirte-->
+    <tr>
+        <td><img width="50" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png
+            Type" alt=""></td>
+        <td>Squirtle</td>
+        <td>Water</td>
+        <td><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
+
+    </tr>
+
+    </tbody>
+</table>
+<h2> Sign in</h2>
+<!-- action -where the form is been send to
+method-what method is used (get/post)-->
+<div>
+<h1>First form</h1>
+<form action="http://wikipedia.com" method="GET">
+    <label>Username:
+        <input name="username" type="text" placeholder="User Name">
+    </label>
+    <label>Password: 
+        <input name="password" type="password" placeholder="Password">
+    </label>
+    <button>Login</button>
+    </div>
+    <!-- second option-->
+    <div>
+    <h1>Second form</h1>
+<form action="http://wikipedia.com" method="GET">
+    <label for="Username">Username</label>
+    <input id="Username" type="text" placeholder="Username" required>
+    <label for="Password">Password</label>
+    <input id="Password" type="password" placeholder="Password" required>
+    <button>LogIn</button>
+ 
+</form> 
+</div>
+<!-- inputs and radio buttons-->
+<div>
+    <p>What do you prefer?</p>
+    <form>
+        <label for="dogs">Dogs:</label>
+        <input type="radio" name="pet choise" id="dogs" value="Dogs">
+        <label for="cats">Cats:</label>
+        <input type="radio" name="pet choise" id="cats" value="Cats">
+
+          <select name="color">
+              <option>red</option>
+              <option>white</option>
+              <option>black</option>
+          </select>
+          <br>
+          <input name="paragraf" type="text">
+          <br>
+          <textarea name="paragraf" id="paragraf" cols="10" rows="10"></textarea>
+        <button>Go!</button>
+    </form>
+
+
+</div>
+
+</body>
+</html>

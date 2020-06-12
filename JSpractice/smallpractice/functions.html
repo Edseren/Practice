@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>My Number Guess</p>
+<select id="myNumber">
+    <option>0</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+</select>
+<button id="guess">Guess!!</button>
+
+
+<script type="text/javascript">
+
+    function doAguess(corectAnswer) {
+        var guess = Math.round(Math.random() * 5);
+        return guess == corectAnswer;
+    }
+
+    document.getElementById( "guess" ).onclick = function () {
+        var myNumber = document.getElementById( "myNumber" ).value;
+        var gotIt = false;
+        var nrOfGuesses = 1;
+        while ( gotIt == false ) {
+            if ( doAguess( myNumber )  ==true )
+
+            {
+                gotIt = true;
+                alert( "got it was a " + myNumber + ". It tok me  " + nrOfGuesses + " Guesses" );
+            }
+        else
+            {
+                nrOfGuesses++;
+            }
+        }
+    };
+
+
+    function avarage(a, b) {
+        return(a + b) / 2;
+    }
+    var x = 5;
+    var y = 9;
+    //alert(avarage(x, y));
+
+
+
+
+</script>
+
+</body>
+</html>
